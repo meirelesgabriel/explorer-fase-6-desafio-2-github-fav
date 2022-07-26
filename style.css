@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+#page {
+  max-width: 112rem;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#search {
+  display: flex;
+}
+
+table {
+  width: 100%;
+}
+
+table * {
+  text-align: left;
+}
+
+tbody td img {
+  width: 5.6rem;
+  height: 5.6rem;
+  border-radius: 50%;
+}
+
+tr td:first-child {
+  display: flex;
+}
+
+.git-user {
+  display: flex;
+  flex-direction: column;
+}
