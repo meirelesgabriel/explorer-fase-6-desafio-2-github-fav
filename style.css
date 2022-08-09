@@ -10,6 +10,7 @@
 
 body {
   font-size: 1.6rem;
+  background-color: #000000;
 }
 
 #page {
@@ -28,6 +29,41 @@ header {
 
 #search {
   display: flex;
+  gap: 0.8rem;
+}
+
+#search button {
+  display: flex;
+  gap: 0.8rem;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+
+  background-color: #065E7C;
+  color: #FFFF;
+
+  border: none;
+  border-radius: 5px;
+
+  padding: 1.2rem 3.2rem; 
+}
+
+#search input {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+
+  background-color: #06181C;
+  color: #7C7C8A;
+
+  border: none;
+  border-radius: 5px;
+
+  width: 46.2rem;
+  padding: 1.6rem;
 }
 
 table {
@@ -38,6 +74,11 @@ table {
 
 table * {
   text-align: left;
+  color: #E1E1E6;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 3.2rem;
 }
 
 thead tr {
@@ -67,4 +108,8 @@ th, td {
 .git-user {
   display: flex;
   flex-direction: column;
+}
+
+.remove {
+  color: #F75A68;
 }
