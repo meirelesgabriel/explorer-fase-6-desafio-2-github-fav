@@ -34,6 +34,7 @@ header {
 
 #search button {
   display: flex;
+  align-items: center;
   gap: 0.8rem;
 
   font-family: 'Roboto', sans-serif;
@@ -47,7 +48,23 @@ header {
   border: none;
   border-radius: 5px;
 
-  padding: 1.2rem 3.2rem; 
+  /*padding: 1.2rem 3.2rem;*/
+  width: 17rem;
+  justify-content: center; 
+  text-transform: uppercase;
+}
+
+#search button:hover {
+  background: #FFFFFF;
+  color: hsla(195, 91%, 25%, 1);
+}
+
+#search button:hover svg path {
+  fill: hsla(195, 91%, 25%, 1);
+}
+
+button {
+  cursor: pointer;
 }
 
 #search input {
@@ -70,6 +87,14 @@ table {
   width: 100%;
   height: 100%;
   margin-top: 8.7rem;
+
+  
+  border: 1px solid #4A808C;
+  border-radius: 1.2rem;
+  border-spacing: 0;
+
+  /*overflow: hidden;*/
+  /*border-collapse: collapse;*/
 }
 
 table * {
@@ -81,12 +106,40 @@ table * {
   line-height: 3.2rem;
 }
 
+thead {
+  background-color: hsla(194, 72%, 13%, 1);
+  border: 1px solid #4A808C;
+  border-bottom: none;
+}
+
 thead tr {
   height: 6.4rem;
 }
 
+tbody {
+  border: 1px solid #4A808C;
+  border-top: none;
+}
+
 tbody tr {
   height: 10.4rem;
+  border-bottom: 1px solid #4A808C;
+}
+
+tbody tr:nth-child(odd) {
+  background: hsla(195, 61%, 6%, 0.5);
+}
+
+tbody tr:nth-child(even) {
+  background: hsla(192, 65%, 7%, 1);
+}
+
+tbody tr td:first-child {
+  padding: 2.4rem 4rem;
+}
+
+tbody tr td:first-child .git-user p, tbody tr td:first-child .git-user span {
+  font-weight: 400;
 }
 
 tbody td img {
@@ -98,6 +151,22 @@ tbody td img {
 th, td {
   padding-left: 4rem;
 }
+
+th:first-child {
+  border-top-left-radius: 1.2rem;
+}
+
+th:last-child {
+  border-top-right-radius: 1.2rem;
+}
+
+tr:last-child {
+  border-radius: 1.2rem;
+}
+
+/*tr:last-child td:last-child {
+  border-bottom-right-radius: 1.2rem;
+}*/
 
 .personal-info {
   display: flex;
